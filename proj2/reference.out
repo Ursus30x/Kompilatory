@@ -1,0 +1,237 @@
+Author: first nad last name
+yytext              Token type      Token value as string
+
+Begin KW_BEGIN
+Class KW_CLASS
+Glyph IDENT Glyph
+; ;
+======== FOUND: empty FVS_PART ========
+Virtual KW_VIRTUAL
+: :
+Procedure KW_PROCEDURE
+print IDENT print
+Is KW_IS
+Procedure KW_PROCEDURE
+print IDENT print
+; ;
+======== FOUND: PROCEDURE_HEADING 'print' ========
+======== FOUND: PROCEDURE_DECLARATION 'print' ========
+; ;
+======== FOUND: VIRTUAL_PART ========
+Begin KW_BEGIN
+End KW_END
+======== FOUND: STATEMENT ========
+======== FOUND: CLASS_BODY ========
+======== FOUND: MAIN_PART 'Glyph' ========
+======== FOUND: CLASS_DECLARATION 'Glyph' ========
+; ;
+======== FOUND: DECLARATION ========
+Glyph IDENT Glyph
+Class KW_CLASS
+Char IDENT Char
+( (
+c IDENT c
+) )
+======== FOUND: FORMAL_PARAMETER_PART ========
+; ;
+Character KW_CHARACTER
+======== FOUND: VALUE_TYPE ========
+c IDENT c
+======== FOUND: SPECIFIER ========
+; ;
+======== FOUND: SPECIFICATION_PART ========
+======== FOUND: FVS_PART ========
+Begin KW_BEGIN
+======== FOUND: empty VIRTUAL_PART ========
+Procedure KW_PROCEDURE
+print IDENT print
+; ;
+======== FOUND: PROCEDURE_HEADING 'print' ========
+======== FOUND: PROCEDURE_DECLARATION 'print' ========
+======== FOUND: DECLARATION ========
+OutChar IDENT OutChar
+( (
+c IDENT c
+) )
+======== FOUND: PROCEDURE_STATEMENT 'OutChar' ========
+; ;
+======== FOUND: STATEMENT ========
+End KW_END
+======== FOUND: STATEMENT ========
+======== FOUND: BLOCK ========
+======== FOUND: CLASS_BODY ========
+======== FOUND: MAIN_PART 'Char' ========
+======== FOUND: CLASS_DECLARATION 'Char' ========
+; ;
+======== FOUND: DECLARATION ========
+Glyph IDENT Glyph
+Class KW_CLASS
+Line IDENT Line
+( (
+elements IDENT elements
+) )
+======== FOUND: FORMAL_PARAMETER_PART ========
+; ;
+Ref KW_REF
+( (
+Glyph IDENT Glyph
+) )
+======== FOUND: REFERENCE_TYPE ========
+Array KW_ARRAY
+======== FOUND: SPECIFIER ========
+elements IDENT elements
+; ;
+======== FOUND: SPECIFICATION_PART ========
+======== FOUND: FVS_PART ========
+Begin KW_BEGIN
+======== FOUND: empty VIRTUAL_PART ========
+Procedure KW_PROCEDURE
+print IDENT print
+; ;
+======== FOUND: PROCEDURE_HEADING 'print' ========
+======== FOUND: PROCEDURE_DECLARATION 'print' ========
+======== FOUND: DECLARATION ========
+Begin KW_BEGIN
+Integer KW_INTEGER
+======== FOUND: VALUE_TYPE ========
+i IDENT i
+; ;
+======== FOUND: DECLARATION ========
+For KW_FOR
+i IDENT i
+:= ASSIGN
+1 INTEGER_CONST 1
+Step KW_STEP
+1 INTEGER_CONST 1
+Until KW_UNTIL
+UpperBound IDENT UpperBound
+( (
+elements IDENT elements
+, ,
+1 INTEGER_CONST 1
+) )
+Do KW_DO
+elements IDENT elements
+( (
+i IDENT i
+) )
+======== FOUND: PROCEDURE_STATEMENT 'elements' ========
+. .
+======== FOUND: REMOTE_PREFIX 'elements' ========
+print IDENT print
+; ;
+======== FOUND: FOR_STATEMENT 'i' ========
+======== FOUND: STATEMENT ========
+OutImage IDENT OutImage
+; ;
+======== FOUND: STATEMENT ========
+End KW_END
+======== FOUND: STATEMENT ========
+======== FOUND: BLOCK ========
+======== FOUND: STATEMENT ========
+; ;
+End KW_END
+======== FOUND: STATEMENT ========
+======== FOUND: BLOCK ========
+======== FOUND: CLASS_BODY ========
+======== FOUND: MAIN_PART 'Line' ========
+======== FOUND: CLASS_DECLARATION 'Line' ========
+; ;
+======== FOUND: DECLARATION ========
+Ref KW_REF
+( (
+Glyph IDENT Glyph
+) )
+======== FOUND: REFERENCE_TYPE ========
+rg IDENT rg
+; ;
+======== FOUND: DECLARATION ========
+Ref KW_REF
+( (
+Glyph IDENT Glyph
+) )
+======== FOUND: REFERENCE_TYPE ========
+Array KW_ARRAY
+rgs IDENT rgs
+( (
+1 INTEGER_CONST 1
+: :
+4 INTEGER_CONST 4
+) )
+; ;
+======== FOUND: DECLARATION ========
+rgs IDENT rgs
+( (
+1 INTEGER_CONST 1
+) )
+:- REF_ASSIGN
+New KW_NEW
+Char IDENT Char
+( (
+'A' CHARACTER_CONST 'A'
+) )
+======== FOUND: ASSIGNMENT_STATEMENT ========
+======== FOUND: STATEMENT ========
+; ;
+rgs IDENT rgs
+( (
+2 INTEGER_CONST 2
+) )
+:- REF_ASSIGN
+New KW_NEW
+Char IDENT Char
+( (
+'b' CHARACTER_CONST 'b'
+) )
+======== FOUND: ASSIGNMENT_STATEMENT ========
+======== FOUND: STATEMENT ========
+; ;
+rgs IDENT rgs
+( (
+3 INTEGER_CONST 3
+) )
+:- REF_ASSIGN
+New KW_NEW
+Char IDENT Char
+( (
+'b' CHARACTER_CONST 'b'
+) )
+======== FOUND: ASSIGNMENT_STATEMENT ========
+======== FOUND: STATEMENT ========
+; ;
+rgs IDENT rgs
+( (
+4 INTEGER_CONST 4
+) )
+:- REF_ASSIGN
+New KW_NEW
+Char IDENT Char
+( (
+'a' CHARACTER_CONST 'a'
+) )
+======== FOUND: ASSIGNMENT_STATEMENT ========
+======== FOUND: STATEMENT ========
+; ;
+rg IDENT rg
+:- REF_ASSIGN
+New KW_NEW
+Line IDENT Line
+( (
+rgs IDENT rgs
+) )
+======== FOUND: ASSIGNMENT_STATEMENT ========
+======== FOUND: STATEMENT ========
+; ;
+rg IDENT rg
+. .
+======== FOUND: REMOTE_PREFIX 'rg' ========
+print IDENT print
+; ;
+======== FOUND: STATEMENT ========
+End KW_END
+======== FOUND: STATEMENT ========
+======== FOUND: BLOCK ========
+======== FOUND: STATEMENT ========
+; ;
+======== FOUND: STATEMENT ========
+======== FOUND: End of program. ========
